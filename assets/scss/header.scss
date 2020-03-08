@@ -1,0 +1,23 @@
+header{
+    width:100%;
+    height:10%;
+    background-color: blanchedalmond;
+    display:grid;
+    grid-template-columns: auto auto ;
+
+    #name{
+        font-family: fantasy;
+        color:blue;
+        font-size: 75px;
+        font-weight: 600;
+    }
+    ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: 30px;
+    }
+
+    li{
+        list-style: none;
+    }
+}
