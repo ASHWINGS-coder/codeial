@@ -1,5 +1,8 @@
 body {
-  margin: 0px; }
+  margin: 0px;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/600x315/cb/32/d3/cb32d3553c9ba2727c79cd69de185018.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
   body #layout-main {
-    height: 100%;
-    background-image: url(https://s-media-cache-ak0.pinimg.com/600x315/cb/32/d3/cb32d3553c9ba2727c79cd69de185018.jpg) no-repeat no-repeat center fixed; }
+    height: 100%; }

@@ -1,8 +1,9 @@
 footer {
-  margin: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
+  padding: 0px;
   height: 10%;
   background-color: blanchedalmond;
   display: grid;
