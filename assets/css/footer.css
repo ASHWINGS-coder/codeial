@@ -5,12 +5,12 @@ footer {
   width: 100%;
   padding: 0px;
   height: 10%;
-  background-color: blanchedalmond;
+  background-color: lightslategrey;
   display: grid;
   grid-template-columns: auto auto; }
   footer #name {
     font-family: fantasy;
-    color: blue;
+    color: black;
     font-size: 75px;
     font-weight: 600; }
   footer ul {
