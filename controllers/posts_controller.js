@@ -18,7 +18,7 @@ module.exports.destroy = function(req,res){
     // .id means converting object id into string
        if(post.user == req.user.id){
           post.remove();
-
+// deleting comments of the particular post 
           Comment.deleteMany({post : req.params.id},function(err){
             return res.redirect('back');
           })

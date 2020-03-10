@@ -14,7 +14,8 @@
  <% for(post of posts) { %> 
  <li>
 <p>
-        <%  if( locals.user && locals.user.id == post.user              .id) { %>
+        <!-- user is logged in and the post is made the user logged in then only we can delete the post , posts made by other users cant be deleted  -->
+        <%  if( locals.user && locals.user.id == post.user.id) { %>
                 <small>
                         <a href="/posts/destroy/<%= post.id %>"> X </a>
                 </small>
@@ -38,8 +39,13 @@
         <div class="post-comments-list">
                 <ul id="post-comments-<%= post._id %>">
                 <% for (comment of post.comments){%>
-                        <p>
-                                <%= comment.content %>
+<p>
+<%  if( locals.user && locals.user.id == comment.user.id) { %>
+<small>
+ <a href="/comments/destroy/<%= comment.id %>"> X </a>
+</small>
+<%}%>
+ <%= comment.content %>
                                 <br>
                                 <small>
                                         <%= comment.user.name %>
