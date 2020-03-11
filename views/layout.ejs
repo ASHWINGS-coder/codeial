@@ -7,7 +7,13 @@
         <link rel="stylesheet" href="/css/footer.css">
         <%- style %>
     <body>
-      <%- include('_header') %>
+      <%- include('_header'); %>
+
+      <%  if(flash.success && flash.success.length > 0){ %>
+         <h5>
+           <%= flash.success %>
+         </h5> 
+      <%}%>
       
       <main id="layout-main">
         <%- body %>
@@ -15,7 +21,7 @@
        
 
 
-        <%- include('_footer') %>
+        <%- include('_footer'); %>
 
         <%- script %>
     </body>
