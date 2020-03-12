@@ -1,9 +1,9 @@
-<li>
+<li id="post-<%=post._id %>">
     <p>
             <!-- user is logged in and the post is made the user logged in then only we can delete the post , posts made by other users cant be deleted  -->
             <%  if( locals.user && locals.user.id == post.user.id) { %>
                     <small>
-                            <a href="/posts/destroy/<%= post.id %>"> X </a>
+                            <a class="delete-post-button"  href="/posts/destroy/<%= post.id %>"> X </a>
                     </small>
                     <%}%>
           
