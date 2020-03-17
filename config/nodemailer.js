@@ -7,8 +7,8 @@ let transporter = nodemailer.createTransport({
     port:587,
     secure:false,
     auth:{
-        user:'alchemy.cn',
-        pass:'codingninjas'
+        user:'ash',
+        pass:'1'
     }
 });
 
@@ -19,7 +19,7 @@ let renderTemplate = (data,relativePath) => {
         data,
         function(err,template){
             if(err){
-                console.log('error in rendering template');
+                console.log('error in rendering template',err);
                 return;
             }
             mailHTML = template;
